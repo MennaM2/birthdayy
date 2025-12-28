@@ -33,19 +33,12 @@ html_code = """
     50% { transform: scale(1.05); }
     100% { transform: scale(1); }
   }
-  .heart { fill: #ff6666; } /* أحمر أفتح وناعم */
+  .heart { fill: #cc3333; } /* أحمر غامق بسيط */
   .text {
     fill: white;
     font-size: 3px; 
     text-anchor: middle;
     dominant-baseline: middle;
-  }
-  .love {
-    margin-top: 20px;
-    font-size: 5vw; 
-    color: #ff6666; /* نفس الأحمر الناعم */
-    font-weight: bold;
-    text-align: center;
   }
 </style>
 </head>
@@ -56,11 +49,9 @@ html_code = """
   <text x="16" y="12" class="text">كل سنة وانت</text>
   <text x="16" y="17" class="text">أغلى حاجة في حياتي</text>
 </svg>
-<div class="love">بحبك ❤️</div>
 </body>
 </html>
 ' width="100%" height="100%" style="border:none;"></iframe>
 """
 
 display(HTML(html_code))
-
