@@ -6,21 +6,26 @@ html_code = """
 <html lang="ar">
 <head>
 <meta charset="UTF-8">
+<title>مفاجأة قلب ❤️</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-  body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
+  html, body {
+    margin: 0; 
+    padding: 0; 
+    width: 100%; 
+    height: 100%;
     background-color: #f5e6d3; /* خلفية بيج */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
     font-family: Arial, sans-serif;
   }
   svg {
-    width: 60vmin;
-    height: 60vmin;
+    width: 90vmin; /* يغطي معظم شاشة الموبايل */
+    height: 90vmin;
+    max-width: 95%;
+    max-height: 95%;
     animation: pulse 1.5s infinite;
   }
   @keyframes pulse {
@@ -28,19 +33,19 @@ html_code = """
     50% { transform: scale(1.05); }
     100% { transform: scale(1); }
   }
-  .heart { fill: red; }
+  .heart { fill: #ff6666; } /* أحمر أفتح وناعم */
   .text {
     fill: white;
-    font-size: 2.5px;
-    font-family: Arial, sans-serif;
+    font-size: 3px; 
     text-anchor: middle;
     dominant-baseline: middle;
   }
   .love {
     margin-top: 20px;
-    font-size: 24px;
-    color: red;
+    font-size: 5vw; 
+    color: #ff6666; /* نفس الأحمر الناعم */
     font-weight: bold;
+    text-align: center;
   }
 </style>
 </head>
@@ -54,7 +59,8 @@ html_code = """
 <div class="love">بحبك ❤️</div>
 </body>
 </html>
-' width="100%" height="700px" style="border:none;"></iframe>
+' width="100%" height="100%" style="border:none;"></iframe>
 """
 
 display(HTML(html_code))
+
