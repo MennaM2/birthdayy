@@ -32,7 +32,7 @@ html_code = """
 </style>
 </head>
 <body>
-<svg viewBox="0 0 32 29.6" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
   <!-- القلب الأساسي مع Outline -->
   <path class="heart-main" d="M23.6,0c-2.9,0-5.4,1.7-6.6,4.2C15.8,1.7,13.3,0,10.4,0C4.7,0,0,4.7,0,10.4
     c0,11.4,16,19.2,16,19.2s16-7.8,16-19.2C32,4.7,27.3,0,23.6,0z"/>
@@ -41,18 +41,18 @@ html_code = """
   <text x="16" y="12" class="heart-text">كل سنة وانت</text>
   <text x="16" y="17" class="heart-text">أغلى حاجة في حياتي</text>
   
-  <!-- كلمات Osama على شكل قلب Outline خارجي -->
+  <!-- كلمات Osama على شكل قلب Outline كبير -->
   <text>
     <textPath href="#outer-heart" startOffset="0%" class="outline-text">
-      Osama Osama Osama Osama Osama Osama Osama Osama Osama Osama Osama Osama
+      Osama Osama Osama Osama Osama Osama Osama Osama Osama Osama Osama Osama Osama Osama Osama
     </textPath>
   </text>
   
-  <!-- مسار خارجي للقلب لتكرار الكلمات عليه -->
+  <!-- مسار خارجي للقلب الكبير لتكرار الكلمات عليه -->
   <defs>
-    <path id="outer-heart" d="M16 2
-      C 8 2, 0 10, 16 28
-      C 32 10, 24 2, 16 2 Z" />
+    <path id="outer-heart" d="M16 0
+      C 0 0, 0 16, 16 32
+      C 32 16, 32 0, 16 0 Z" />
   </defs>
 </svg>
 </body>
@@ -61,3 +61,4 @@ html_code = """
 """
 
 display(HTML(html_code))
+
